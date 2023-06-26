@@ -11,7 +11,7 @@ const spinner = ora('This is the post-init script');
 
 const PROJECT_PATH = process.cwd();
 console.log('PROJECT_PATH local', PROJECT_PATH);
-const PACKAGE_JSON_PATH = `${PROJECT_PATH}/App.tsx`;
+const PACKAGE_JSON_PATH = `${PROJECT_PATH}/App.js`;
 const PLIST_PATH = `${PROJECT_PATH}/ios/${path.basename(process.cwd())}/info.plist`;
 const STRING_XML_PATH = `${PROJECT_PATH}/android/app/src/main/res/values/strings.xml`;
 
