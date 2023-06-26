@@ -5,7 +5,28 @@ const ora = require('ora');
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
+var questionnaire = require('questionnaire');
 
+
+var questions = [
+    {
+      id: 'os',
+      text: 'Do you prefer (1) OSX, (2) Windows or (3) Linux?',
+      options: ['osx', 'windows', 'linux']
+    },
+    {
+      id: 'coffee',
+      text: 'Do you like coffee with (1) milk or with (2) sugar?',
+      options: ['milk', 'sugar']
+    },
+    {
+      id: 'actor',
+      options: ['Stephen Fry', 'Hugh Laurie']
+    }
+  ];
+   
+  var answers = questionnaire(questions);
+  console.log("Here are the answers: #{JSON.stringify(answers)}")
 
 const spinner = ora('This is the post-init script');
 
