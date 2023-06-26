@@ -4,5 +4,9 @@
   "description": "React Native Template",
   "repository": "git@github.com:Esemesek/react-native-new-template.git",
   "author": "Kacper Wiszczuk <kacperwiszczuk@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ora": "^5.4.1",
+    "inquirer": "^8.2.2"
+  }
 }
