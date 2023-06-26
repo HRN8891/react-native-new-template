@@ -8,7 +8,7 @@ const path = require('path');
 var questionnaire = require('questionnaire');
 
 
-var questions = [
+var questionss = [
     {
       id: 'os',
       text: 'Do you prefer (1) OSX, (2) Windows or (3) Linux?',
@@ -25,7 +25,7 @@ var questions = [
     }
   ];
    
-  var answers = questionnaire(questions);
+  var answers = questionnaire(questionss);
   console.log("Here are the answers: #{JSON.stringify(answers)}")
 
 const spinner = ora('This is the post-init script');
