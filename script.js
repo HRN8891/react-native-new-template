@@ -26,7 +26,7 @@ var questionss = [
   ];
    
   var answers = questionnaire(questionss);
-  console.log("Here are the answers: #{JSON.stringify(answers)}")
+  console.log("Here are the answers",JSON.stringify(answers))
 
 const spinner = ora('This is the post-init script');
 
